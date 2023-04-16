@@ -1,5 +1,4 @@
 import os
-
 from config import API_KEY
 import openai
 from pydub import AudioSegment
