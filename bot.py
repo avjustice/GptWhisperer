@@ -22,7 +22,7 @@ async def start(update, context):
 
 async def shorten_voice(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     new_file = await context.bot.get_file(update.message.voice.file_id)
-    print(new_file)
+    # print(new_file)
     file_id = new_file.file_id
     file_path = new_file.file_path
     r = requests.get(file_path)
